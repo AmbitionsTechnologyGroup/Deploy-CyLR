@@ -38,4 +38,7 @@ $cylrArgs = "-of", "$cylrOutputFileName", `
 
 Start-Process -Wait -NoNewWindow -WorkingDirectory $workingDir "$cylrExe" -ArgumentList "$cylrArgs"
 Write-Host " ########### END CYLR ###########`n"
+Write-Host -NoNewLine " [*] Removing working directory and files...  "
+Remove-Item -Recurse -Force -Path $workingDir
+Write-Host "Done!`n"
 Write-Host "Collection Complete!`n"
