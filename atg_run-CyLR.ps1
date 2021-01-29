@@ -31,6 +31,7 @@ Write-Host "  ########### BEGIN CYLR ###########`n"
 $cylrArgs = "-of", "$cylrOutputFileName", `
             "-os", "/upload", `
             "-zl", "7", `
+            "--usnjrnl", `
             "-zp", "$zipPassword", `
             "-u", "$sftpUserName", `
             "-p", "$sftpPassword", `
