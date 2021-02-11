@@ -6,7 +6,7 @@ $date = Get-Date -Format "MM-dd-yyyy_HH-mm-ss"
 $workingDir = "$env:SYSTEMDRIVE\CyLR"
 $cylrExe = "$workingDir\CyLR.exe"
 $cylrOutputFileName = "CyLR-$env:COMPUTERNAME-$date.zip"
-$cylrUri = "http://download.ambitionsgroup.com/Software/CyLR-beta.exe"
+$cylrUri = "http://download.ambitionsgroup.com/Software/CyLR.exe"
 $netClient = New-Object System.Net.WebClient
 Write-Host "Done!"
 
